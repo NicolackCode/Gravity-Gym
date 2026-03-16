@@ -1,0 +1,53 @@
+.experience-section {
+  padding: 8rem 2rem;
+  background-color: var(--color-bg-panel);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.experience-card {
+  padding: 2.5rem 2rem;
+  border-radius: 2px;
+  background: var(--color-bg-panel);
+  cursor: default;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid var(--color-border);
+}
+
+.experience-card.accent-wood { border-top: 3px solid var(--color-wood); }
+.experience-card.accent-green { border-top: 3px solid var(--color-green); }
+.experience-card.accent-energy { border-top: 3px solid var(--color-energy); }
+.experience-card.accent-concrete { border-top: 3px solid var(--color-concrete); }
+
+.exp-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.accent-icon-wood { background: rgba(166, 124, 82, 0.1); color: var(--color-wood); }
+.accent-icon-green { background: rgba(46, 204, 113, 0.1); color: var(--color-green); }
+.accent-icon-energy { background: rgba(0, 229, 255, 0.1); color: var(--color-energy); }
+.accent-icon-concrete { background: rgba(140, 140, 140, 0.1); color: var(--color-concrete-light); }
+
+.experience-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.experience-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

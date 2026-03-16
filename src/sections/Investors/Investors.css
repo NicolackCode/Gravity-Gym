@@ -1,0 +1,146 @@
+.investors-section {
+  padding: 8rem 2rem;
+  background-color: var(--color-bg-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.investors-section::before {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(166, 124, 82, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.wood-badge {
+  color: var(--color-wood);
+  border-color: rgba(166, 124, 82, 0.3);
+  background: rgba(166, 124, 82, 0.05);
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.reason-card {
+  padding: 2.5rem 2rem;
+  background: var(--color-bg-panel);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.reason-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.accent-icon-energy { background: rgba(0,229,255,0.1); color: var(--color-energy); }
+.accent-icon-green { background: rgba(46,204,113,0.1); color: var(--color-green); }
+.accent-icon-wood { background: rgba(166,124,82,0.1); color: var(--color-wood); }
+.accent-icon-concrete { background: rgba(140,140,140,0.1); color: var(--color-concrete-light); }
+
+.reason-value {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.accent-text-energy { color: var(--color-energy); }
+.accent-text-green { color: var(--color-green); }
+.accent-text-wood { color: var(--color-wood); }
+.accent-text-concrete { color: var(--color-concrete-light); }
+
+.reason-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.reason-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* CTA */
+.investor-cta {
+  margin-top: 6rem;
+  padding: 4rem;
+  background: linear-gradient(135deg, rgba(166, 124, 82, 0.1), rgba(0, 229, 255, 0.05));
+  border: 1px solid rgba(166, 124, 82, 0.3);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.cta-text h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cta-text p {
+  color: var(--color-text-muted);
+  max-width: 500px;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.btn-outline-mail {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn-outline-mail:hover {
+  color: var(--color-energy);
+}
+
+@media (max-width: 768px) {
+  .investor-cta {
+    flex-direction: column;
+    padding: 2.5rem;
+    align-items: flex-start;
+  }
+  .cta-actions { align-items: flex-start; }
+}
