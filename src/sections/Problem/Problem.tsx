@@ -29,11 +29,7 @@ export function Problem() {
           transition={{ duration: 0.8 }}
         >
           <span className="section-badge">Le Constat</span>
-          <h2 className="section-title">Une énergie humaine <span className="text-wood">gaspillée</span></h2>
-          <p className="section-subtitle">
-            Chaque jour, des millions de personnes s'entraînent. Aujourd'hui, cet effort colossal est perdu, 
-            tandis que les salles de sport traditionnelles consomment des quantités astronomiques d'électricité.
-          </p>
+          <h2 className="section-title">L'énergie humaine est <span className="text-wood">gaspillée</span></h2>
         </motion.div>
 
         <motion.div 
@@ -48,15 +44,15 @@ export function Problem() {
               <ZapOff size={32} />
             </div>
             <h3>Effort Perdu</h3>
-            <p>100% de l'énergie cinétique générée par les sportifs est dissipée sous forme de chaleur ou de friction.</p>
+            <p>100% de l'énergie de l'entraînement est aujourd'hui dissipée.</p>
           </motion.div>
 
           <motion.div className="problem-card" variants={itemVariants}>
             <div className="problem-icon">
               <Factory size={32} />
             </div>
-            <h3>Gourmand en Énergie</h3>
-            <p>Une salle de sport classique consomme en moyenne 150 kWh par mètre carré par an.</p>
+            <h3>Coût CO₂</h3>
+            <p>Une salle classique consomme 150 kWh / m² / an.</p>
           </motion.div>
 
           <motion.div className="problem-card" variants={itemVariants}>
@@ -64,7 +60,7 @@ export function Problem() {
               <BatteryWarning size={32} />
             </div>
             <h3>Zéro Résilience</h3>
-            <p>Les modèles actuels dépendent entièrement du réseau électrique traditionnel, sans autonomie.</p>
+            <p>Dépendance totale au réseau électrique centralisé.</p>
           </motion.div>
         </motion.div>
       </div>

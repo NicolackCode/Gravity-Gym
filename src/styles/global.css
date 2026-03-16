@@ -4,10 +4,10 @@
   --color-bg-panel: #0a0a0a; /* Almost Black panel */
   --color-concrete: #8c8c8c; /* Textured Concrete */
   --color-concrete-light: #b3b3b3;
-  --color-wood: #c2a370; /* Premium Brass / Warm Wood */
+  --color-wood: #c2a370; /* Premium Brass / Warm Wood (Kept for hardware) */
   --color-wood-dark: #8c734b;
-  --color-energy: #c2a370; /* Replaced neon cyan with elegant Brass/Gold */
-  --color-green: #3a5a40; /* Muted, elegant botanical green */
+  --color-energy: #4a7c59; /* Eco-Brutalist Moss Green - Primary Accent */
+  --color-green: #3a5a40; /* Darker botanical green */
   --color-text-main: #f5f5f5;
   --color-text-muted: #888888;
   --color-border: rgba(255, 255, 255, 0.08);
@@ -89,8 +89,8 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--color-wood);
-  color: var(--color-bg-dark);
+  background-color: var(--color-energy); /* Changed to Eco-Green */
+  color: #fff;
   border: none;
   padding: 1rem 2rem;
   font-family: var(--font-heading);

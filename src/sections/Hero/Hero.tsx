@@ -26,7 +26,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          Gravity Gym est la première infrastructure sportive où chaque calorie brûlée crée de l'électricité tangible, stockée via une pile à gravité monumentale.
+          Gravity Gym est la première salle où chaque calorie brûlée crée de l'électricité tangible.
         </motion.p>
 
         <motion.div 

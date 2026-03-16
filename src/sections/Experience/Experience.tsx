@@ -7,25 +7,25 @@ export function Experience() {
     {
       icon: <Trophy size={32} />,
       title: "Classements",
-      description: "Chaque kWh produit vous propulse dans le Top 10. Des défis hebdomadaires pour repousser vos limites et ceux de votre équipe.",
+      description: "Propulsez-vous dans le Top 10 des producteurs de watts.",
       color: "wood"
     },
     {
       icon: <Users size={32} />,
-      title: "Défis collectifs",
-      description: "Cette semaine : produire assez pour alimenter le bâtiment pendant 1 heure. L'écran central affiche la progression en direct.",
+      title: "Défis Collectifs",
+      description: "Atteignez l'autonomie globale via l'écran central.",
       color: "green"
     },
     {
       icon: <Smartphone size={32} />,
-      title: "Application mobile",
-      description: "Suivez vos watts produits, vos kWh cumulés et votre impact CO₂ évité. Partagez vos perfs sur vos réseaux.",
+      title: "App Mobile",
+      description: "Suivez vos watts et vos kg de CO₂ évités.",
       color: "energy"
     },
     {
       icon: <Zap size={32} />,
       title: "Recharge USB",
-      description: "Branchez votre téléphone directement sur la machine d'entraînement. Sortez avec 30% de batterie gagnée.",
+      description: "Rechargez vos appareils à la force de vos bras.",
       color: "concrete"
     },
   ];

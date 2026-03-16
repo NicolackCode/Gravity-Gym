@@ -6,31 +6,31 @@ const streams = [
   {
     icon: <TrendingUp size={28} />,
     title: "Abonnements",
-    details: ["Mensuel : 79 €/mois", "Annuel : 69 €/mois", "Famille : 120 €/mois"],
+    details: ["Mensuel : 79 €", "Annuel : 69 €/m", "Familles"],
     color: "wood"
   },
   {
     icon: <Building2 size={28} />,
-    title: "Entreprises (RSE)",
-    details: ["Packs salariés", "Reporting CO₂ certifié", "Branding sur la pile"],
+    title: "B2B (RSE)",
+    details: ["Packs Salariés", "Certificats CO₂", "Branding"],
     color: "energy"
   },
   {
     icon: <Leaf size={28} />,
     title: "Subventions",
-    details: ["Crédit Impôt Innovation", "ADEME / Régions", "Fonds européens Horizon"],
+    details: ["Fonds Vert", "ADEME", "Horizon EU"],
     color: "green"
   },
   {
     icon: <Globe size={28} />,
     title: "Licensing",
-    details: ["Franchise du concept", "Royalties machines", "Formation opérateurs"],
+    details: ["Franchises", "Royalties IT", "Formation"],
     color: "concrete"
   },
   {
     icon: <Award size={28} />,
-    title: "Image Premium",
-    details: ["Partenariats marques éco", "Événements & presse", "Contenu documentaire"],
+    title: "Brand Asset",
+    details: ["Partenariats Éco", "Presse", "Documentaires"],
     color: "wood"
   },
 ];
@@ -46,8 +46,7 @@ export function BusinessModel() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <span className="section-badge">Modèle Économique</span>
-          <h2 className="section-title">Un modèle <span className="text-wood">multi-revenus</span> robuste</h2>
-          <p className="section-subtitle">Gravity Gym ne se finance pas uniquement sur les abonnements. Chaque pilier génère une ligne de revenus indépendante, limitant l'exposition aux risques.</p>
+          <h2 className="section-title">Un modèle <span className="text-wood">multi-revenus</span></h2>
         </motion.div>
 
         <div className="biz-streams">

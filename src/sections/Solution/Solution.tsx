@@ -34,10 +34,6 @@ export function Solution() {
         >
           <span className="section-badge energy-badge">La Solution</span>
           <h2 className="section-title">Devenez la <span className="text-energy">centrale électrique</span></h2>
-          <p className="section-subtitle">
-            Un écosystème low-tech révolutionnaire où chaque machine est connectée à un micro-alternateur. 
-            L'énergie humaine est convertie, lissée et stockée de manière visible.
-          </p>
         </motion.div>
 
         <motion.div 
@@ -53,7 +49,7 @@ export function Solution() {
               <Activity className="step-icon text-main" size={40} />
             </div>
             <h4>Effort</h4>
-            <p className="step-desc">Pédalage, course, traction</p>
+            <p className="step-desc">Traction, Course, Pédalage.</p>
           </motion.div>
 
           {/* Arrow */}
@@ -67,7 +63,7 @@ export function Solution() {
               <Zap className="step-icon text-energy" size={40} />
             </div>
             <h4>Alternateur</h4>
-            <p className="step-desc">Conversion cinétique → électrique</p>
+            <p className="step-desc">Conversion en électricité.</p>
           </motion.div>
 
           {/* Arrow */}
@@ -81,7 +77,7 @@ export function Solution() {
               <Database className="step-icon text-concrete" size={40} />
             </div>
             <h4>Pile à Gravité</h4>
-            <p className="step-desc">Stockage physique de l'énergie (levage de masse)</p>
+            <p className="step-desc">Stockage physique visible.</p>
           </motion.div>
 
           {/* Arrow */}
@@ -94,8 +90,8 @@ export function Solution() {
             <div className="step-icon-wrapper pulse-green">
               <Recycle className="step-icon text-green" size={40} />
             </div>
-            <h4>Réutilisation</h4>
-            <p className="step-desc">Alimentation du bâtiment (lumière, climatisation)</p>
+            <h4>Bâtiment</h4>
+            <p className="step-desc">Alimentation des locaux.</p>
           </motion.div>
         </motion.div>
       </div>
