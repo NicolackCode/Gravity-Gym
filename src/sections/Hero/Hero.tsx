@@ -26,7 +26,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          Gravity Gym est la première salle où chaque calorie brûlée crée de l'électricité tangible.
+          Gravity Gym est le premier club de fitness qui alimente la ville. Jusqu'à 250 Watts-heures générés de manière autonome par session d'entraînement intense.
         </motion.p>
 
         <motion.div 

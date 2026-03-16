@@ -39,9 +39,9 @@ export function GravityBattery() {
             <span className="section-badge concrete-badge">Le Cœur du Système</span>
             <h2 className="section-title">La Pile à <span className="text-wood">Gravité</span></h2>
             <p className="section-subtitle">
-              Une tour centrale de 8 mètres de haut. L'énergie produite par les membres actionne des treuils silencieux qui soulèvent un bloc de béton de plusieurs tonnes. 
+              Un stockage gravitaire expérientiel. Notre monolithe cinétique transforme l'énergie potentielle (E=mgh) en un spectacle architectural permanent.
               <br/><br/>
-              L'énergie électrique devient une force gravitationnelle, visible, compréhensible et tangible.
+              Il stocke le travail mécanique de l'effort collectif pour le libérer lors de la redescente.
             </p>
 
             <div className="counter-box">
@@ -56,9 +56,9 @@ export function GravityBattery() {
             </div>
             
             <ul className="battery-features">
-              <li>Stockage cinétique à 95% d'efficacité</li>
-              <li>Zéro dégradation chimique</li>
-              <li>Durée de vie théorique de 50 ans</li>
+              <li>Masse de 12.5 T en mouvement perpétuel</li>
+              <li>Rendement de restitution réseau : ~74%</li>
+              <li>{/* @MotionDesignTeam : Implémenter le Canvas WebGL interactif ici pour la masse dynamique */}</li>
             </ul>
           </motion.div>
         </div>

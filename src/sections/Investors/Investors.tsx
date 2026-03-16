@@ -65,24 +65,41 @@ export function Investors() {
           ))}
         </div>
 
-        {/* CTA Block */}
+        {/* Lead Qualification Form */}
         <motion.div
-          className="investor-cta"
+          className="investor-form-container"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
         >
-          <div className="cta-text">
-            <h3>Vous souhaitez en savoir plus ?</h3>
-            <p>Notre dossier investisseur complet (financier, technique, marché) est disponible sur demande.</p>
+          <div className="form-header">
+            <h3>Accéder au Pitch Deck (Série A)</h3>
+            <p>Notre documentation financière, technique et les plans architecturaux sont réservés aux investisseurs qualifiés.</p>
           </div>
-          <div className="cta-actions">
-            <button className="btn-primary cta-btn">
+          <form className="investor-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="form-group">
+              <label htmlFor="name">Nom / Fonds d'investissement</label>
+              <input type="text" id="name" placeholder="Ex: VC Partners..." required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email professionnel</label>
+              <input type="email" id="email" placeholder="contact@fonds.vc" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="ticket">Ticket d'investissement envisagé</label>
+              <select id="ticket" required defaultValue="">
+                <option value="" disabled>Sélectionnez une fourchette</option>
+                <option value="seed">Seed (1M€ - 3M€)</option>
+                <option value="seriea">Série A (3M€ - 10M€)</option>
+                <option value="strategic">Partenaire Stratégique / Real Estate</option>
+              </select>
+            </div>
+            <button className="btn-primary form-submit-btn">
               <Download size={20} />
-              Télécharger le dossier PDF
+              DÉBLOQUER LE PITCH DECK
             </button>
-            <a href="mailto:invest@gravitygym.io" className="btn-outline-mail">invest@gravitygym.io</a>
-          </div>
+          </form>
         </motion.div>
       </div>
     </section>

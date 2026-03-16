@@ -63,7 +63,7 @@ export function Solution() {
               <Zap className="step-icon text-energy" size={40} />
             </div>
             <h4>Alternateur</h4>
-            <p className="step-desc">Conversion en électricité.</p>
+            <p className="step-desc">Captation cinétique réseau à 74% de rendement absolu.</p>
           </motion.div>
 
           {/* Arrow */}

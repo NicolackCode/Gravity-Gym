@@ -30,8 +30,8 @@ export function Impact() {
           >
             <span className="section-badge green-badge">Impact Environnemental</span>
             <h2 className="section-title">Des chiffres <span className="text-green">concrets</span></h2>
-            <p className="section-subtitle" style={{ marginBottom: '3rem' }}>
-              Estimations pour un site de 400 membres à 150W/h.
+            <p className="section-subtitle" style={{ marginBottom: '3rem', maxWidth: '600px', margin: '0 auto 3rem auto' }}>
+              Pour un club premium climatisé de 500 m² consommant en moyenne 120 MWh/an, l'effort continu d'un parc de 40 machines permet d'atteindre l'équation suivante :
             </p>
             
             <div className="stat-list">
@@ -45,15 +45,15 @@ export function Impact() {
               <div className="stat-row">
                 <div className="stat-icon"><Wind size={20} /></div>
                 <div>
-                  <span className="stat-value">~42 T CO₂</span>
-                  <span className="stat-label">évités par an</span>
+                  <span className="stat-value">10,9 g</span>
+                  <span className="stat-label">Intensité plancher du mix (gCO₂/kWh)</span>
                 </div>
               </div>
               <div className="stat-row">
                 <div className="stat-icon"><Sun size={20} /></div>
                 <div>
-                  <span className="stat-value">30 à 40%</span>
-                  <span className="stat-label">de consommation compensée</span>
+                  <span className="stat-value">Jusqu'à 18%</span>
+                  <span className="stat-label">de couverture énergétique autonome</span>
                 </div>
               </div>
             </div>
