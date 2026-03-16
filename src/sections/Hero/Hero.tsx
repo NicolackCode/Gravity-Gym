@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import './Hero.css';
+import bgVideo from '../../assets/media/hero-bg.mp4';
+import bgFallback from '../../assets/media/hero-bg-fallback.png';
 
 export function Hero() {
   return (
@@ -52,20 +54,18 @@ export function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="hero-background">
-        <div className="concrete-texture"></div>
-        <div className="glow-effect"></div>
-        
-        {/* Placeholder for 3D Gravity Battery Silhouette */}
-        <div className="gravity-column-placeholder">
-          <motion.div 
-            className="gravity-mass"
-            animate={{ y: [100, 0] }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          ></motion.div>
-          <div className="cables"></div>
-          <div className="cables left"></div>
-        </div>
+      <div className="hero-background-wrapper">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          poster={bgFallback}
+          className="hero-video-bg"
+        >
+          <source src={bgVideo} type="video/mp4" />
+        </video>
+        <div className="hero-overlay"></div>
       </div>
     </section>
   );

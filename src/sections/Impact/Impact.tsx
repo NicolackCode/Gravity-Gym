@@ -1,11 +1,26 @@
 import { motion } from 'framer-motion';
 import { Leaf, Wind, Sun } from 'lucide-react';
 import './Impact.css';
+import bgVideo from '../../assets/media/impact-bg.mp4';
 
 export function Impact() {
   return (
     <section id="impact" className="impact-section">
-      <div className="section-container">
+      {/* Video Background */}
+      <div className="impact-background">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="impact-video-bg"
+        >
+          <source src={bgVideo} type="video/mp4" />
+        </video>
+        <div className="impact-overlay"></div>
+      </div>
+
+      <div className="section-container impact-content-wrapper">
         <div className="impact-grid">
           {/* Left: Data Stats */}
           <motion.div

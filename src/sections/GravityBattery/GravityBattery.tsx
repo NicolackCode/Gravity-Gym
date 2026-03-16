@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './GravityBattery.css';
+import batteryMacro from '../../assets/media/battery-macro.png';
 
 export function GravityBattery() {
   const [kwh, setKwh] = useState(12450.8);
@@ -21,9 +22,8 @@ export function GravityBattery() {
     offset: ["start end", "end start"]
   });
 
-  // Map scroll progress to the Y position of the mass (moves up as you scroll down)
-  const massY = useTransform(scrollYProgress, [0, 1], [300, -100]);
-  const cableHeight = useTransform(scrollYProgress, [0, 1], ["80%", "20%"]);
+  // Map scroll progress to the Y position of the image (moves up as you scroll down)
+  const massY = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
   return (
     <section id="battery" className="battery-section" ref={containerRef}>
@@ -63,32 +63,16 @@ export function GravityBattery() {
           </motion.div>
         </div>
 
-        {/* Right: Immersive 3D/CSS representation */}
+        {/* Right: Immersive 3D representation */}
         <div className="battery-visual">
-          <div className="battery-shaft">
-            
-            {/* Ambient lighting inside the shaft */}
-            <div className="shaft-glow"></div>
-            
-            {/* The Cables */}
-            <motion.div className="shaft-cables" style={{ height: cableHeight }}>
-              <div className="cable"></div>
-              <div className="cable"></div>
-              <div className="cable"></div>
-              <div className="cable"></div>
-            </motion.div>
-
-            {/* The Concrete Mass */}
-            <motion.div 
-              className="mass-block"
+          <div className="battery-macro-container">
+            <motion.img 
+              src={batteryMacro} 
+              alt="Macro view of the gravity battery pulleys and cables" 
+              className="battery-macro-image"
               style={{ y: massY }}
-            >
-              <div className="mass-texture"></div>
-              <div className="mass-details">
-                <div className="mass-stripe"></div>
-                <div className="mass-weight">12.5 T</div>
-              </div>
-            </motion.div>
+            />
+            <div className="battery-macro-overlay"></div>
           </div>
         </div>
 
