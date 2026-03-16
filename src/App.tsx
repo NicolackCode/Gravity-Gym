@@ -7,6 +7,8 @@ import { GravityBattery } from './sections/GravityBattery/GravityBattery';
 import { Experience } from './sections/Experience/Experience';
 import { BusinessModel } from './sections/BusinessModel/BusinessModel';
 import { Impact } from './sections/Impact/Impact';
+import { MaterialArchitectureBOM } from './sections/B2B/MaterialArchitectureBOM';
+import { GovernanceCompliance } from './sections/B2B/GovernanceCompliance';
 import { Investors } from './sections/Investors/Investors';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Experience />
       <BusinessModel />
       <Impact />
+      <MaterialArchitectureBOM />
+      <GovernanceCompliance />
       <Investors />
       <Footer />
     </div>
