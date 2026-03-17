@@ -1,34 +1,27 @@
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Hero } from './sections/Hero/Hero';
-import { Problem } from './sections/Problem/Problem';
-import { Solution } from './sections/Solution/Solution';
-import { GravityBattery } from './sections/GravityBattery/GravityBattery';
-import { Experience } from './sections/Experience/Experience';
-import { BusinessModel } from './sections/BusinessModel/BusinessModel';
-import { Impact } from './sections/Impact/Impact';
+import { ProblemOpportunity } from './sections/ProblemOpportunity/ProblemOpportunity';
+import { UnitEconomics } from './sections/UnitEconomics/UnitEconomics';
+import { TechnologicalMoat } from './sections/TechnologicalMoat/TechnologicalMoat';
 import { MaterialArchitectureBOM } from './sections/B2B/MaterialArchitectureBOM';
 import { GovernanceCompliance } from './sections/B2B/GovernanceCompliance';
-import { Investors } from './sections/Investors/Investors';
+import { QualificationFunnel } from './sections/QualificationFunnel/QualificationFunnel';
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app-container bg-carbon">
       <Navbar />
       <Hero />
-      <Problem />
-      <Solution />
-      <GravityBattery />
-      <Experience />
-      <BusinessModel />
-      <Impact />
+      <ProblemOpportunity />
+      <UnitEconomics />
+      <TechnologicalMoat />
       <MaterialArchitectureBOM />
       <GovernanceCompliance />
-      <Investors />
+      <QualificationFunnel />
       <Footer />
     </div>
   );
 }
 
 export default App;
-
