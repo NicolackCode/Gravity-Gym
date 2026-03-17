@@ -7,17 +7,37 @@ import { TechnologicalMoat } from './sections/TechnologicalMoat/TechnologicalMoa
 import { MaterialArchitectureBOM } from './sections/B2B/MaterialArchitectureBOM';
 import { GovernanceCompliance } from './sections/B2B/GovernanceCompliance';
 import { QualificationFunnel } from './sections/QualificationFunnel/QualificationFunnel';
+import { SplashGate } from './components/layout/SplashGate';
+import { GymArchitecture } from './sections/GymArchitecture/GymArchitecture';
+import { useAudience } from './context/AudienceContext';
 
 function App() {
+  const { audience } = useAudience();
+
+  if (!audience) {
+    return <SplashGate />;
+  }
+
   return (
     <div className="app-container bg-carbon">
       <Navbar />
       <Hero />
       <ProblemOpportunity />
-      <UnitEconomics />
-      <TechnologicalMoat />
-      <MaterialArchitectureBOM />
-      <GovernanceCompliance />
+      
+      {audience === 'B2B' ? (
+        <>
+          <UnitEconomics />
+          <TechnologicalMoat />
+          <GymArchitecture />
+          <MaterialArchitectureBOM />
+          <GovernanceCompliance />
+        </>
+      ) : (
+        <>
+          <GymArchitecture />
+        </>
+      )}
+
       <QualificationFunnel />
       <Footer />
     </div>

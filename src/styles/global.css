@@ -1,116 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Colors - Neo/Eco-Brutalist */
-  --color-bg-dark: #111111; /* Carbon Dark */
-  --color-bg-panel: #242424; /* Carbon */
-  --color-concrete: #E4E4E4; /* Concrete */
-  --color-concrete-light: #F5F5F5;
-  --color-wood: #C79816; /* Brass */
-  --color-wood-dark: #A67B0F;
-  --color-energy: #109121; /* Nature Green */
-  --color-green: #0C7A19; 
-  --color-text-main: #E4E4E4;
-  --color-text-muted: #888888;
-  --color-border: #111111;
-
-  /* Typography */
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
-
-  /* Smooth scrolling */
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+  }
+  body {
+    @apply bg-carbon text-concrete font-sans antialiased selection:bg-nature selection:text-white;
+  }
+  
+  /* Hide scrollbar for a cleaner premium look */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090b; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a; 
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46; 
+  }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-body);
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-main);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-::selection {
-  background: rgba(0, 229, 255, 0.2);
-  color: var(--color-energy);
-}
-
-/* Snap scroll anchors */
-section {
-  scroll-margin-top: 80px;
-}
-
-/* Base styles for the hero */
-.app-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  background: radial-gradient(
-    circle at center,
-    var(--color-bg-panel) 0%,
-    var(--color-bg-dark) 100%
-  );
-}
-
-.hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  max-width: 900px;
-}
-
-.hero-subtitle {
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  color: var(--color-text-muted);
-  font-weight: 300;
-  margin-bottom: 3rem;
-  max-width: 600px;
-}
-
-.btn-primary {
-  background-color: var(--color-energy); /* Changed to Eco-Green */
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.btn-primary:hover {
-  background-color: var(--color-energy);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 229, 255, 0.2);
+@layer utilities {
+  .glass-panel {
+    @apply bg-black/40 backdrop-blur-md border border-white/10 shadow-glass;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
+  }
+  .href-nav {
+    display: flex;
+    align-items: center;
+  }
 }
